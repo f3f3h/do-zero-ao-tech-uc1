@@ -105,3 +105,48 @@
     transform: translateY(-2px);
     background-color: #bae6fd;
 }
+
+/* --- RESPONSIVIDADE DA PÁGINA DE RESULTADOS --- */
+@media (max-width: 768px) {
+    .resultado-wrapper {
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+
+    .resultado-title {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+
+    .resultado-card {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .resultado-card img {
+        width: 120px;
+    }
+
+    .card-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .resultado-botoes {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .btn-trilha, 
+    .btn-trilha-secundario {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .resultado-descricao {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+}
