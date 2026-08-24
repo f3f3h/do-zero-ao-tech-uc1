@@ -1,0 +1,217 @@
+/* --- IMPORTANDO A FONTE PADRÃO (INTER) --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* --- RESET BÁSICO DA PÁGINA SOBRE --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px 80px 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+main section {
+    margin-bottom: 80px;
+}
+
+/* --- TIPOGRAFIA PADRÃO DA PÁGINA --- */
+main h1, main h2, main h3 {
+    color: #0f172a;
+    font-weight: 700;
+}
+
+main p {
+    color: #334155;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+/* --- SECTION 1: INTRODUÇÃO --- */
+#section1 h1 {
+    font-size: 2.8rem;
+    margin-bottom: 25px;
+    letter-spacing: -0.02em;
+}
+
+#section1 p {
+    font-size: 1.15rem;
+    margin-bottom: 15px;
+}
+
+/* --- SECTION 2: MISSÃO, VISÃO E VALORES --- */
+#section2 {
+    display: flex;
+    gap: 25px;
+    align-items: stretch;
+}
+
+#coluna-esquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    flex: 1;
+}
+
+/* Aplicando o nosso padrão de Cards  */
+#quadrado1, #quadrado2, #quadrado3, #quadrado5, #quadrado6 {
+    background-color: #fef9c3;
+    border: 1px solid #fde047;
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+#quadrado3 {
+    flex: 1;
+    justify-content: flex-start;
+}
+
+#quadrado1 h3, #quadrado2 h3, #quadrado3 h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    border-left: 4px solid #facc15; /* Detalhe lateral no título */
+    padding-left: 12px;
+}
+
+#quadrado3 p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+#quadrado3 p:last-child {
+    margin-bottom: 0;
+}
+
+#quadrado3 strong {
+    color: #0f172a;
+    font-weight: 700;
+}
+
+/* --- SECTION 3: LUMI --- */
+#section3 h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+#quadrado4 {
+    display: flex;
+    gap: 25px;
+    align-items: stretch;
+}
+
+#section3 img {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+#quadrado5, #quadrado6 {
+    flex: 1;
+    text-align: left;
+    justify-content: center;
+}
+
+#quadrado5 h3, #quadrado6 h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    border-left: none;
+    padding-left: 0;
+}
+
+/* --- SECTION 4: NOSSA EQUIPE --- */
+#section4 {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+#quadrado8 {
+    flex: 1;
+}
+
+#quadrado8 h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+#coluna-foto {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#quadrado7 {
+    width: 100%;
+    height: 380px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#quadrado7 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+#listaequipe {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+#listaequipe p {
+    font-size: 0.95rem;
+    color: #475569;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f1f5f9;
+    font-weight: 500;
+}
+
+#listaequipe p:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+/* --- RESPONSIVIDADE  --- */
+@media (max-width: 900px) {
+    #section2 {
+        flex-direction: column;
+    }
+
+    #quadrado4 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #section4 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #section3 img {
+        width: 180px;
+        margin-bottom: 10px;
+    }
+
+    #quadrado7 {
+        height: 250px;
+    }
+}

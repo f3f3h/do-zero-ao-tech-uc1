@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do Zer0 ao Tech</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <link rel="stylesheet" href="css/acessibilidade.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="imagens/LUMI LOGO.png" alt="Lumi logo">
+                <span>DoZeroAoTech</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="active">Home</a>
+                <a href="html/testeVocacional.html">Teste Vocacional</a>
+                <a href="html/carreiras.html">Carreiras</a>
+                <a href="#">Sobre Nós</a>
+            </nav>
+    </header>
+
+    <main class="main-container">
+        
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Tecnologia parece um Labirinto</h1>
+                <p class="hero-subtitle">
+                    A <strong>Lumi</strong> pode ser sua estrela guia que te mostra o caminho.
+                </p>
+                <p class="hero-description">
+                    O <em>Do 0 ao Tech</em> reúne carreiras, conteúdos, ferramentas e cursos para ajudar você a dar os primeiros passos. Descubra quais áreas combinam com seu perfil e comece sua jornada no seu próprio ritmo.
+                </p>
+                <div class="hero-buttons">
+                    <a href="html/testeVocacional.html" class="btn-primary">Fazer o Teste vocacional</a>
+                    <a href="html/carreiras.html" class="btn-secondary">Explorar áreas</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="imagens/Lumi na porta.png" alt="Lumi na porta de tecnologia">
+            </div>
+        </section>
+
+        <section class="lumi-card">
+            <div class="lumi-avatar">
+                <img src="imagens/Lumi.png" alt="Mascote Lumi">
+            </div>
+            <div class="lumi-text">
+                <h2>Oi! Eu sou a Lumi!</h2>
+                <p>Eu sei que entrar no mundo da tecnologia pode parecer um pouco confuso no começo. Tantas áreas, linguagens, cursos... por onde começar?</p>
+                <p>É justamente para isso que eu estou aqui! Preparei um mapinha com os primeiros passos para te ajudar a encontrar um caminho, descobrir o que aprender e chegar até o seu primeiro projeto.</p>
+                <p class="lumi-highlight">Vem comigo? Eu te mostro o caminho.</p>
+            </div>
+        </section>
+
+        <section class="roadmap">
+            <div class="roadmap-header">
+                <h2>Entenda seu caminho conosco</h2>
+            </div>
+            <p class="roadmap-description">
+                Dar os primeiros passos na tecnologia pode parecer desafiador diante de tantas possibilidades, mas você não precisa caminhar no escuro. Desenhei um roteiro prático e estruturado para guiar você desde a descoberta inicial até a construção das suas primeiras experiências profissionais. 
+                <strong>Siga o mapa no seu próprio ritmo clicando nas bolinhas:</strong>
+            </p>
+
+            <div class="treasure-map">
+                <!-- Linha tracejada do mapa com a cor azulada da paleta -->
+                <svg class="map-path-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <path d="M 8 6 C 40 6, 58 10, 58 26 C 58 40, 13 32, 13 49 C 13 65, 63 55, 63 72 C 63 85, 38 80, 38 92" 
+                          fill="none" stroke="#26c6da" stroke-width="0.4" stroke-dasharray="1 1" />
+                </svg>
+
+                <!-- Passo 1 -->
+                <div class="map-step revealed" id="step1" style="top: 2%; left: 5%;">
+                    <div class="number-badge" onclick="openStep(1)">01</div>
+                    <div class="step-content right">
+                        <h3>Descubra uma área que combina com você</h3>
+                        <p>Ainda está em dúvida? <a href="html/testeVocacional.html" class="link-inline">Faça o teste vocacional</a> e encontre caminhos relacionados aos seus interesses.</p>
+                    </div>
+                </div>
+
+                <!-- Passo 2 -->
+                <div class="map-step" id="step2" style="top: 22%; left: 55%;">
+                    <div class="number-badge" onclick="openStep(2)">02</div>
+                    <div class="step-content right">
+                        <h3>Prefere explorar livremente?</h3>
+                        <p>Conheça Desenvolvimento, Dados, Segurança e IA e entenda o que cada área faz.</p>
+                    </div>
+                </div>
+
+                <!-- Passo 3 -->
+                <div class="map-step" id="step3" style="top: 45%; left: 10%;">
+                    <div class="number-badge" onclick="openStep(3)">03</div>
+                    <div class="step-content bottom">
+                        <h3>Conheça as possibilidades de carreira</h3>
+                        <p>Veja como é a rotina profissional, quais habilidades são importantes e onde cada caminho pode levar.</p>
+                    </div>
+                </div>
+
+                <!-- Passo 4 -->
+                <div class="map-step" id="step4" style="top: 68%; left: 60%;">
+                    <div class="number-badge" onclick="openStep(4)">04</div>
+                    <div class="step-content bottom">
+                        <h3>Encontre por onde começar a estudar</h3>
+                        <p>Compare cursos gratuitos e pagos selecionados para quem está começando.</p>
+                    </div>
+                </div>
+
+                <!-- Passo 5 -->
+                <div class="map-step" id="step5" style="top: 88%; left: 35%;">
+                    <div class="number-badge" onclick="openStep(5)">05</div>
+                    <div class="step-content bottom">
+                        <h3>Transforme conhecimento em experiência</h3>
+                        <p>Crie seu primeiro projeto, desenvolva suas habilidades e comece a construir seu portfólio.
+                            <img src="imagens/Linha de chegada do mapinha.png" class="lumi-inline" alt="Chegada">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Script atualizado para abrir/fechar ao clicar na mesma bolinha -->
+        <script>
+            function openStep(num) {
+                const current = document.getElementById('step' + num);
+                
+                if (current.classList.contains('opened')) {
+                    current.classList.remove('opened');
+                } else {
+                    current.classList.add('opened');
+                    const next = document.getElementById('step' + (num + 1));
+                    if (next) {
+                        next.classList.add('revealed'); 
+                    }
+                }
+            }
+        </script>
+
+        <!-- Seção: Teste Vocacional -->
+        <section class="vocational-section">
+            <div class="vocational-header">
+                <div class="vocational-title-area">
+                    <h2>Qual área de tech <span class="highlight-cyan">combina com você?</span></h2>
+                    <p class="vocational-description">
+                        A tecnologia está cheia de oportunidades, mas você sente dúvida sobre qual caminho seguir? O nosso <strong>Teste Vocacional</strong> foi criado exatamente para te ajudar a dar esse passo com confiança, clareza e sem complicação.
+                    </p>
+                </div>
+                <div class="vocational-avatar"></div>
+            </div>
+
+            <p class="section-subtitle">Como funciona?</p>
+
+            <div class="steps-list">
+                <div class="step-item">
+                    <div class="number-badge-small">1</div>
+                    <div class="step-content">
+                        <h3>Responda</h3>
+                        <p>Escolha as alternativas que mais combinam com você.</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="number-badge-small">2</div>
+                    <div class="step-content">
+                        <h3>Descubra</h3>
+                        <p>Suas respostas serão analisadas para encontrar as áreas mais compatíveis com seu perfil.</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="number-badge-small">3</div>
+                    <div class="step-content">
+                        <h3>Explore</h3>
+                        <p>Conheça as áreas indicadas e descubra onde você pode começar sua jornada na tecnologia.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center-btn-container">
+                <a href="html/testeVocacional.html" class="btn-primary btn-large">Realizar teste vocacional</a>
+            </div>
+        </section>
+
+        <section class="areas-section">
+            <p class="section-subtitle">Prefere não fazer o teste vocacional?</p>
+            <h2>Explore as áreas e descubra as possibilidades no seu ritmo.</h2>
+
+            <div class="cards-grid">
+                <!-- Card 1: Desenvolvimento -->
+                <div class="area-card">
+                    <div class="card-header">
+                        <img src="imagens/Desenvolvimento de Software.png" alt="Desenvolvimento de Software">
+                        <h3>Desenvolvimento de Software</h3>
+                    </div>
+                    <p>Crie sites, sistemas e aplicativos utilizando linguagens de programação, bancos de dados e tecnologias modernas para desenvolver soluções digitais inovadoras.</p>
+                    <a href="html/curso_desenvolvimento.html" class="btn-primary btn-card" style="text-decoration: none; display: inline-block; text-align: center;">Realizar essa trilha</a>
+                </div>
+
+                <!-- Card 2: Dados -->
+                <div class="area-card">
+                    <div class="card-header">
+                        <img src="imagens/Dados.png" alt="Área de Dados">
+                        <h3>Área de Dados</h3>
+                    </div>
+                    <p>Transforme grandes volumes de dados em informações estratégicas utilizando análise, estatística e programação para apoiar decisões inteligentes.</p>
+                    <a href="html/curso_dados.html" class="btn-primary btn-card" style="text-decoration: none; display: inline-block; text-align: center;">Realizar essa trilha</a>
+                </div>
+
+                <!-- Card 3: Segurança -->
+                <div class="area-card">
+                    <div class="card-header">
+                        <img src="imagens/Segurança da Informação.png" alt="Segurança da Informação">
+                        <h3>Segurança da Informação</h3>
+                    </div>
+                    <p>Proteja sistemas, redes e informações contra ataques cibernéticos, vazamentos de dados e acessos não autorizados por meio de boas práticas.</p>
+                    <a href="html/curso_seguranca.html" class="btn-primary btn-card" style="text-decoration: none; display: inline-block; text-align: center;">Realizar essa trilha</a>
+                </div>
+
+                <!-- Card 4: IA -->
+                <div class="area-card">
+                    <div class="card-header">
+                        <img src="imagens/IA.png" alt="Inteligência Artificial">
+                        <h3>Inteligência Artificial</h3>
+                    </div>
+                    <p>É uma tecnologia que permite máquinas simularem a inteligência humana, aprendendo com dados, reconhecendo padrões e tomando decisões de forma autônoma.</p>
+                    <a href="html/curso_ia.html" class="btn-primary btn-card" style="text-decoration: none; display: inline-block; text-align: center;">Realizar essa trilha</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé Completo -->
+    <footer class="footer footer-dark">
+        <div class="footer-container">
+            
+            <!-- Links de Navegação -->
+            <div class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="html/testeVocacional.html">Teste Vocacional</a>
+                <a href="html/carreiras.html">Carreiras</a>
+                <a href="html/sobre.html">Sobre Nós</a>
+            </div>
+
+            <!-- Links Sociais -->
+            <div class="footer-social">
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                <a href="https://br.linkedin.com/" target="_blank">LinkedIn</a>
+            </div>
+
+            <!-- Direitos Autorais -->
+            <div class="footer-copyright">
+                <p>&copy; 2026 Do 0 ao Tech. Todos os direitos reservados.</p>
+            </div>
+            
+        </div>
+    </footer>
+
+    <!--Menu de acessibilidade -->
+    <button class="botao-acessibilidade" id="botaoAcessibilidade" aria-label="Abrir opções de acessibilidade" aria-expanded="false">
+        ♿
+    </button>
+
+    <div class="menu-acessibilidade" id="menuAcessibilidade" aria-hidden="true">
+        <div class="cabecalho-acessibilidade">
+            <h2>Acessibilidade</h2>
+            <button id="fecharAcessibilidade" aria-label="Fechar menu">×</button>
+        </div>
+
+        <div class="opcoes-acessibilidade">
+            <button class="opcao-acessibilidade" id="aumentarTexto">
+                <span>🔠</span>
+                <div>
+                    <strong>Aumentar texto</strong>
+                    <small>Aumentar o tamanho da fonte</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="diminuirTexto">
+                <span>🔡</span>
+                <div>
+                    <strong>Diminuir texto</strong>
+                    <small>Diminuir o tamanho da fonte</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="lerAoPassar">
+                <span>🖱️</span>
+                <div>
+                    <strong>Ler ao passar o mouse</strong>
+                    <small>Ouvir o conteúdo ao posicionar o cursor</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="altoContraste">
+                <span>◐</span>
+                <div>
+                    <strong>Alto contraste</strong>
+                    <small>Aumentar o contraste das cores</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="contrasteNegativo">
+                <span>◑</span>
+                <div>
+                    <strong>Contraste negativo</strong>
+                    <small>Inverter as cores da página</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="destacarLinks">
+                <span>🔗</span>
+                <div>
+                    <strong>Destacar links</strong>
+                    <small>Facilitar a identificação dos links</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade restaurar" id="restaurarAcessibilidade">
+                <span>↩️</span>
+                <div>
+                    <strong>Restaurar padrão</strong>
+                    <small>Voltar às configurações originais</small>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <script src="js/acessibilidade.js"></script>
+
+</body>
+</html>

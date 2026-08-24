@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento de Software - Do Zer0 ao Tech</title>
+    <link rel="stylesheet" href="../home.css">
+    <link rel="stylesheet" href="../css/curso_dados.css">
+    <link rel="stylesheet" href="../css/acessibilidade.css">
+</head>
+<body>
+
+    <header class="header header-dark">
+        <div class="header-container">
+            <div class="logo">
+                <img src="../imagens/LUMI LOGO.png" alt="Lumi logo">
+                <span class="logo-text-light">DoZeroAoTech</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="../home.html" class="nav-light">Home</a>
+                <a href="testeVocacional.html" class="nav-light">Teste Vocacional</a>
+                <a href="carreiras.html" class="active nav-light">Carreiras</a>
+                <a href="sobre.html" class="nav-light">Sobre Nós</a>
+            </nav>
+            
+        <button class="botao-acessibilidade" id="botaoAcessibilidade" aria-label="Abrir opções de acessibilidade" aria-expanded="false">
+    ♿
+    </button>
+
+    <div class="menu-acessibilidade" id="menuAcessibilidade" aria-hidden="true">
+        <div class="cabecalho-acessibilidade">
+            <h2>Acessibilidade</h2>
+            <button id="fecharAcessibilidade" aria-label="Fechar menu">×</button>
+        </div>
+
+        <div class="opcoes-acessibilidade">
+
+            <button class="opcao-acessibilidade" id="aumentarTexto">
+                <span>🔠</span>
+                <div>
+                    <strong>Aumentar texto</strong>
+                    <small>Aumentar o tamanho da fonte</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="diminuirTexto">
+                <span>🔡</span>
+                <div>
+                    <strong>Diminuir texto</strong>
+                    <small>Diminuir o tamanho da fonte</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="lerAoPassar">
+                <span>🖱️</span>
+                <div>
+                    <strong>Ler ao passar o mouse</strong>
+                    <small>Ouvir o conteúdo ao posicionar o cursor</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="altoContraste">
+                <span>◐</span>
+                <div>
+                    <strong>Alto contraste</strong>
+                    <small>Aumentar o contraste das cores</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="contrasteNegativo">
+                <span>◑</span>
+                <div>
+                    <strong>Contraste negativo</strong>
+                    <small>Inverter as cores da página</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="destacarLinks">
+                <span>🔗</span>
+                <div>
+                    <strong>Destacar links</strong>
+                    <small>Facilitar a identificação dos links</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade restaurar" id="restaurarAcessibilidade">
+                <span>↩️</span>
+                <div>
+                    <strong>Restaurar padrão</strong>
+                    <small>Voltar às configurações originais</small>
+                </div>
+            </button>
+
+        </div>
+    </div>
+            
+    </header>
+
+    <main class="main-container">
+        <div class="dados-page-wrapper">
+            
+            <!-- Hero Section -->
+            <section class="dados-hero">
+                <img src="../imagens/Lumi - Software.png" alt="Mascote Lumi Área de Desenvolvimento">
+                <h1>Desenvolvimento de Software</h1>
+            </section>
+
+            <p class="dados-text-block">
+                Desenvolvimento de software é usar código para criar soluções como sites, aplicativos e sistemas. Existem diferentes caminhos na área, desde o que aparece na tela até dados, segurança e funcionamento interno.
+            </p>
+
+            <!-- Seção 1: O que você pode fazer -->
+            <section class="dados-section">
+                <h2 class="section-title">O que você pode fazer nessa área?</h2>
+                <div class="cards-trilha">
+                    <div class="trilha-card">
+                        <h3>Criar</h3>
+                        <p>Transformar ideias em sites, aplicativos e sistemas que as pessoas possam usar.</p>
+                    </div>
+                    <div class="trilha-card">
+                        <h3>Programar</h3>
+                        <p>Escrever códigos e construir as funcionalidades que fazem um software funcionar.</p>
+                    </div>
+                    <div class="trilha-card">
+                        <h3>Resolver</h3>
+                        <p>Encontrar problemas no código, corrigir erros e melhorar aplicações existentes.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção 2: Por onde começar? -->
+            <section class="dados-section">
+                <h2 class="section-title">Por onde começar?</h2>
+                <p class="dados-text-block">
+                    Não tente aprender várias linguagens de uma vez! Comece entendendo a lógica e escolha uma linguagem para praticar. O importante agora é construir uma boa base.
+                </p>
+                <div class="passos-lista">
+                    <div class="passo-item">
+                        <div class="passo-numero">01</div>
+                        <div class="passo-texto">
+                            <h4>Lógica de programação</h4>
+                            <p>Aprenda a pensar passo a passo e resolver problemas com código.</p>
+                        </div>
+                    </div>
+                    <div class="passo-item">
+                        <div class="passo-numero">02</div>
+                        <div class="passo-texto">
+                            <h4>HTML + CSS</h4>
+                            <p>Comece criando páginas e entendendo como as interfaces são estruturadas.</p>
+                        </div>
+                    </div>
+                    <div class="passo-item">
+                        <div class="passo-numero">03</div>
+                        <div class="passo-texto">
+                            <h4>JavaScript</h4>
+                            <p>Dê vida às páginas e aprenda sua primeira linguagem de programação.</p>
+                        </div>
+                    </div>
+                    <div class="passo-item">
+                        <div class="passo-numero">04</div>
+                        <div class="passo-texto">
+                            <h4>Git + GitHub</h4>
+                            <p>Aprenda a salvar versões do seu código e compartilhar seus projetos.</p>
+                        </div>
+                    </div>
+                    <div class="passo-item">
+                        <div class="passo-numero">05</div>
+                        <div class="passo-texto">
+                            <h4>Banco de Dados</h4>
+                            <p>Aprenda como os sistemas guardam, organizam e encontram informações.</p>
+                        </div>
+                    </div>
+                    <div class="passo-item">
+                        <div class="passo-numero">06</div>
+                        <div class="passo-texto">
+                            <h4>Projetos</h4>
+                            <p>Coloque tudo em prática criando seus primeiros projetos para o portfólio.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção 3: Onde esse caminho pode te levar? -->
+            <section class="dados-section">
+                <h2 class="section-title">Onde esse caminho pode te levar?</h2>
+                
+                <div class="career-grid-header">
+                    <span>Início de carreira</span>
+                    <span>Meio de carreira</span>
+                    <span>Carreira avançada</span>
+                </div>
+
+                <!-- Dev Front-end -->
+                <div class="career-row row-yellow">
+                    <div class="career-cell">
+                        <h4>Dev Front-end Júnior</h4>
+                        <p>Cria interfaces e páginas que os usuários utilizam.</p>
+                    </div>
+                    <div class="career-cell">
+                        <h4>Dev Front-end Pleno</h4>
+                        <p>Desenvolve interfaces mais complexas e experiências interativas.</p>
+                    </div>
+                    <div class="career-cell">
+                        <h4>Dev Front-end Sênior</h4>
+                        <p>Define soluções avançadas de interface, arquitetura e experiência.</p>
+                    </div>
+                </div>
+
+                <!-- Dev Back-end -->
+                <div class="career-row row-blue">
+                    <div class="career-cell">
+                        <h4>Dev Back-end Júnior</h4>
+                        <p>Desenvolve APIs, regras de negócio e integrações.</p>
+                    </div>
+                    <div class="career-cell">
+                        <h4>Dev Back-end Pleno</h4>
+                        <p>Desenvolve sistemas, APIs e integrações mais robustas.</p>
+                    </div>
+                    <div class="career-cell">
+                        <h4>Dev Back-end Sênior</h4>
+                        <p>Projeta sistemas escaláveis, seguros e de alta performance.</p>
+                    </div>
+                </div>
+
+                <!-- Dev Mobile -->
+                <div class="career-row row-yellow">
+                    <div class="career-cell">
+                        <h4>Dev Mobile Júnior</h4>
+                        <p>Cria aplicativos para celulares e dispositivos móveis.</p>
+                    </div>
+                    <div class="career-cell">
+                        <h4>Dev Mobile Pleno</h4>
+                        <p>Cria aplicativos completos e soluções móveis mais avançadas.</p>
+                    </div>
+                    <div class="career-cell">
+                        <h4>Dev Mobile Sênior</h4>
+                        <p>Lidera o desenvolvimento de aplicativos complexos e escaláveis.</p>
+                    </div>
+                </div>
+
+                <!-- Dev Full Stack -->
+                <div class="career-row row-blue">
+                    <div class="career-cell">
+                        <h4>Dev Full Stack Júnior</h4>
+                        <p>Trabalha tanto com a interface quanto com o back-end.</p>
+                    </div>
+                    <div class="career-cell">
+                        <h4>Dev Full Stack Pleno</h4>
+                        <p>Atua em toda a aplicação, do front-end ao back-end.</p>
+                    </div>
+                    <div class="career-cell">
+                        <h4>Dev Full Stack Sênior</h4>
+                        <p>Domina toda a aplicação e participa de decisões de arquitetura.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção 4: Média Salarial -->
+            <section class="dados-section">
+                <h2 class="section-title">Qual a média salarial?</h2>
+                <p class="dados-text-block" style="font-size: 0.9rem; margin-bottom: 30px;">
+                    Valores aproximados para o mercado brasileiro em 2026. Podem variar conforme experiência, localização, empresa, especialização e modelo de contratação. 
+                    <a href="https://www.glassdoor.com.br/index.htm" target="_blank" class="link-inline" style="color: #26c6da; text-decoration: underline; margin-left: 5px;">Ver fonte da pesquisa</a>
+                </p>
+
+                <div class="salary-list">
+                    <div class="salary-item">
+                        <span class="salary-level">Estágio</span>
+                        <div class="salary-bar-bg"><div class="salary-bar-fill" style="width: 15%;"></div></div>
+                        <span class="salary-value">R$ 1.500 - 2.500</span>
+                    </div>
+                    <div class="salary-item">
+                        <span class="salary-level">Júnior</span>
+                        <div class="salary-bar-bg"><div class="salary-bar-fill" style="width: 30%;"></div></div>
+                        <span class="salary-value">R$ 3.000 - 6.000</span>
+                    </div>
+                    <div class="salary-item">
+                        <span class="salary-level">Pleno</span>
+                        <div class="salary-bar-bg"><div class="salary-bar-fill" style="width: 55%;"></div></div>
+                        <span class="salary-value">R$ 6.000 - 12.000</span>
+                    </div>
+                    <div class="salary-item">
+                        <span class="salary-level">Sênior</span>
+                        <div class="salary-bar-bg"><div class="salary-bar-fill" style="width: 80%;"></div></div>
+                        <span class="salary-value">R$ 12.000 - 22.000</span>
+                    </div>
+                    <div class="salary-item">
+                        <span class="salary-level">Tech Lead</span>
+                        <div class="salary-bar-bg"><div class="salary-bar-fill" style="width: 100%;"></div></div>
+                        <span class="salary-value">R$ 20.000 - 35.000</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção 5: Conheça a rotina real -->
+            <section class="dados-section">
+                <h2 class="section-title">Conheça a rotina real</h2>
+                <p class="dados-text-block" style="font-size: 0.9rem; margin-bottom: 30px;">
+                    Assista ao vídeo preparado por um profissional da área de Desenvolvimento e acompanhe de perto como é a dinâmica do dia a dia na criação de softwares.
+                </p>
+
+                <div class="video-card">
+                    
+                    <!-- Link do video -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nOz8oW0hNRU?si=SADHYxt3ykgYOLHL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    
+                    <div class="video-info">
+                        <h3>Minha Rotina REAL como Engenheira de Software</h3>
+                        <a href="https://www.youtube.com/channel/UC5zu0F3DdcNyFAWYTb4SYPQ" target="_blank" class="link-inline">Caio Andres</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção 6: Onde Estudar -->
+            <section class="dados-section">
+                <h2 class="section-title">Onde estudar?</h2>
+                
+                <!-- Botões de Troca -->
+                <div class="course-tabs">
+                    <button class="btn-tab active" id="btn-gratuitos" onclick="toggleCursos('gratuitos')">CURSOS GRATUITOS</button>
+                    <button class="btn-tab" id="btn-pagos" onclick="toggleCursos('pagos')">CURSOS PAGOS</button>
+                </div>
+
+                <!-- CONTEÚDO: CURSOS GRATUITOS -->
+                <div id="lista-gratuitos" class="course-content">
+                    
+                    <div class="course-category">
+                        <h3>Iniciante: Lógica e Desenvolvimento Web</h3>
+                        <div class="course-item">
+                            <div>
+                                <h4>Algoritmos e Lógica de Programação</h4>
+                                <span>Curso em Vídeo</span>
+                            </div>
+                            <a href="#">Acessar curso</a>
+                        </div>
+                        <div class="course-item">
+                            <div>
+                                <h4>HTML5 e CSS3</h4>
+                                <span>Curso em Vídeo</span>
+                            </div>
+                            <a href="#">Acessar curso</a>
+                        </div>
+                        <div class="course-item">
+                            <div>
+                                <h4>JavaScript</h4>
+                                <span>Curso em Vídeo</span>
+                            </div>
+                            <a href="#">Acessar curso</a>
+                        </div>
+                    </div>
+
+                    <div class="course-category">
+                        <h3>Intermediário: Programação e Banco de Dados</h3>
+                        <div class="course-item">
+                            <div>
+                                <h4>Responsive Web Design</h4>
+                                <span>FreeCodeCamp</span>
+                            </div>
+                            <a href="#">Acessar curso</a>
+                        </div>
+                        <div class="course-item">
+                            <div>
+                                <h4>JavaScript Algorithms and Data Structures</h4>
+                                <span>FreeCodeCamp</span>
+                            </div>
+                            <a href="#">Acessar curso</a>
+                        </div>
+                        <div class="course-item">
+                            <div>
+                                <h4>Git e GitHub</h4>
+                                <span>Curso em Vídeo</span>
+                            </div>
+                            <a href="#">Acessar curso</a>
+                        </div>
+                    </div>
+
+                    <div class="course-category">
+                        <h3>Avançado: Full Stack e Projetos</h3>
+                        <div class="course-item">
+                            <div>
+                                <h4>Full Stack JavaScript — DAX</h4>
+                                <span>The Odin Project</span>
+                            </div>
+                            <a href="#">Acessar curso</a>
+                        </div>
+                        <div class="course-item">
+                            <div>
+                                <h4>Back End Development and APIs</h4>
+                                <span>FreeCodeCamp</span>
+                            </div>
+                            <a href="#">Acessar curso</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- CONTEÚDO: CURSOS PAGOS (Inicia Escondido) -->
+                <div id="lista-pagos" class="course-content escondido">
+                    
+                    <div class="course-category">
+                        <h3>Iniciante: Base de Programação</h3>
+                        <div class="course-item">
+                            <div>
+                                <h4>Formação Iniciante em Programação</h4>
+                                <span>Alura</span>
+                            </div>
+                            <a href="#">Acessar curso</a>
+                        </div>
+                        <div class="course-item">
+                            <div>
+                                <h4>Formação HTML e CSS</h4>
+                                <span>Alura</span>
+                            </div>
+                            <a href="#">Acessar curso</a>
+                        </div>
+                        <div class="course-item">
+                            <div>
+                                <h4>Lógica de Programação</h4>
+                                <span>Udemy</span>
+                            </div>
+                            <a href="#">Acessar curso</a>
+                        </div>
+                    </div>
+
+                    <div class="course-category">
+                        <h3>Intermediário: Desenvolvimento Full Stack</h3>
+                        <div class="course-item">
+                            <div>
+                                <h4>Formação Full Stack</h4>
+                                <span>Rocketseat</span>
+                            </div>
+                            <a href="#">Acessar curso</a>
+                        </div>
+                        <div class="course-item">
+                            <div>
+                                <h4>Formação JavaScript para Web</h4>
+                                <span>Alura</span>
+                            </div>
+                            <a href="#">Acessar curso</a>
+                        </div>
+                        <div class="course-item">
+                            <div>
+                                <h4>Formação SQL e Banco de Dados</h4>
+                                <span>Udemy</span>
+                            </div>
+                            <a href="#">Acessar curso</a>
+                        </div>
+                    </div>
+
+                    <div class="course-category">
+                        <h3>Avançado: Arquitetura e Engenharia De Software</h3>
+                        <div class="course-item">
+                            <div>
+                                <h4>Formação Arquitetura de Software</h4>
+                                <span>Alura</span>
+                            </div>
+                            <a href="#">Acessar curso</a>
+                        </div>
+                        <div class="course-item">
+                            <div>
+                                <h4>Desenvolvimento Full Stack avançado</h4>
+                                <span>Udemy</span>
+                            </div>
+                            <a href="#">Acessar curso</a>
+                        </div>
+                        <div class="course-item">
+                            <div>
+                                <h4>Formação/Carreira em Desenvolvimento</h4>
+                                <span>DevMedia</span>
+                            </div>
+                            <a href="#">Acessar curso</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <!-- Rodapé Completo -->
+    <footer class="footer footer-dark">
+        <div class="footer-container">
+            
+            <!-- Links de Navegação -->
+            <div class="footer-nav">
+                <a href="../home.html">Home</a>
+                <a href="testeVocacional.html">Teste Vocacional</a>
+                <a href="carreiras.html">Carreiras</a>
+                <a href="sobre.html">Sobre Nós</a>
+            </div>
+
+            <!-- Links Sociais (Cegos) -->
+            <div class="footer-social">
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                <a href="https://br.linkedin.com/" target="_blank">LinkedIn</a>
+            </div>
+
+            <!-- Direitos Autorais -->
+            <div class="footer-copyright">
+                <p>&copy; 2026 Do 0 ao Tech. Todos os direitos reservados.</p>
+            </div>
+            
+        </div>
+    </footer>
+
+    <!--Menu de acessibilidade -->
+    <button class="botao-acessibilidade" id="botaoAcessibilidade" aria-label="Abrir opções de acessibilidade" aria-expanded="false">
+        ♿
+    </button>
+
+    <div class="menu-acessibilidade" id="menuAcessibilidade" aria-hidden="true">
+        <div class="cabecalho-acessibilidade">
+            <h2>Acessibilidade</h2>
+            <button id="fecharAcessibilidade" aria-label="Fechar menu">×</button>
+        </div>
+
+        <div class="opcoes-acessibilidade">
+            <button class="opcao-acessibilidade" id="aumentarTexto">
+                <span>🔠</span>
+                <div>
+                    <strong>Aumentar texto</strong>
+                    <small>Aumentar o tamanho da fonte</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="diminuirTexto">
+                <span>🔡</span>
+                <div>
+                    <strong>Diminuir texto</strong>
+                    <small>Diminuir o tamanho da fonte</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="lerAoPassar">
+                <span>🖱️</span>
+                <div>
+                    <strong>Ler ao passar o mouse</strong>
+                    <small>Ouvir o conteúdo ao posicionar o cursor</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="altoContraste">
+                <span>◐</span>
+                <div>
+                    <strong>Alto contraste</strong>
+                    <small>Aumentar o contraste das cores</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="contrasteNegativo">
+                <span>◑</span>
+                <div>
+                    <strong>Contraste negativo</strong>
+                    <small>Inverter as cores da página</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="destacarLinks">
+                <span>🔗</span>
+                <div>
+                    <strong>Destacar links</strong>
+                    <small>Facilitar a identificação dos links</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade restaurar" id="restaurarAcessibilidade">
+                <span>↩️</span>
+                <div>
+                    <strong>Restaurar padrão</strong>
+                    <small>Voltar às configurações originais</small>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <script src="../js/acessibilidade.js"></script>
+
+    
+    <!-- Script Simples para as Abas de Cursos -->
+    <script>
+        function toggleCursos(tipo) {
+            // Remove a classe active de todos os botões e esconde as listas
+            document.getElementById('btn-gratuitos').classList.remove('active');
+            document.getElementById('btn-pagos').classList.remove('active');
+            document.getElementById('lista-gratuitos').classList.add('escondido');
+            document.getElementById('lista-pagos').classList.add('escondido');
+
+            // Ativa o botão selecionado e mostra a respectiva lista
+            document.getElementById('btn-' + tipo).classList.add('active');
+            document.getElementById('lista-' + tipo).classList.remove('escondido');
+        }
+    </script>
+</body>
+</html>

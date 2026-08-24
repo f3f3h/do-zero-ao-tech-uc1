@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carreiras - Do Zer0 ao Tech</title>
+    <link rel="stylesheet" href="../css/carreiras.css" type="text/css">
+    <link rel="stylesheet" href="../css/acessibilidade.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="../imagens/LUMI LOGO.png" alt="Lumi logo">
+                <span>DoZer0AoTech</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="../home.html">Home</a>
+                <a href="testeVocacional.html">Teste Vocacional</a>
+                <a href="carreiras.html" class="active">Carreiras</a>
+                <a href="sobre.html">Sobre Nós</a>
+            </nav>
+
+        <button class="botao-acessibilidade" id="botaoAcessibilidade" aria-label="Abrir opções de acessibilidade" aria-expanded="false">
+    ♿
+    </button>
+
+    <div class="menu-acessibilidade" id="menuAcessibilidade" aria-hidden="true">
+        <div class="cabecalho-acessibilidade">
+            <h2>Acessibilidade</h2>
+            <button id="fecharAcessibilidade" aria-label="Fechar menu">×</button>
+        </div>
+
+        <div class="opcoes-acessibilidade">
+
+            <button class="opcao-acessibilidade" id="aumentarTexto">
+                <span>🔠</span>
+                <div>
+                    <strong>Aumentar texto</strong>
+                    <small>Aumentar o tamanho da fonte</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="diminuirTexto">
+                <span>🔡</span>
+                <div>
+                    <strong>Diminuir texto</strong>
+                    <small>Diminuir o tamanho da fonte</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="lerAoPassar">
+                <span>🖱️</span>
+                <div>
+                    <strong>Ler ao passar o mouse</strong>
+                    <small>Ouvir o conteúdo ao posicionar o cursor</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="altoContraste">
+                <span>◐</span>
+                <div>
+                    <strong>Alto contraste</strong>
+                    <small>Aumentar o contraste das cores</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="contrasteNegativo">
+                <span>◑</span>
+                <div>
+                    <strong>Contraste negativo</strong>
+                    <small>Inverter as cores da página</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="destacarLinks">
+                <span>🔗</span>
+                <div>
+                    <strong>Destacar links</strong>
+                    <small>Facilitar a identificação dos links</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade restaurar" id="restaurarAcessibilidade">
+                <span>↩️</span>
+                <div>
+                    <strong>Restaurar padrão</strong>
+                    <small>Voltar às configurações originais</small>
+                </div>
+            </button>
+
+        </div>
+    </div>
+            
+
+    </header>
+
+    <main class="main-container">
+
+        <section class="areas-section">
+            <p class="section-subtitle">
+                Prefere não fazer o teste vocacional?
+            </p>
+
+            <h1>
+                Explore as áreas e descubra as possibilidades no seu ritmo.
+            </h1>
+
+            <div class="cards-grid">
+
+                <!-- CARD 1: Dev -->
+                <div class="area-card">
+                    <div class="card-header">
+                        <img
+                            src="../imagens/Desenvolvimento de Software.png"
+                            alt="Desenvolvimento de Software">
+                    </div>
+
+                    <div class="area-content">
+                        <h2>Desenvolvimento de Software</h2>
+                        <p>
+                            Crie sites, sistemas e aplicativos utilizando linguagens de programação,
+                            bancos de dados e tecnologias modernas para desenvolver soluções digitais inovadoras.
+                        </p>
+                        <a
+                            href="curso_desenvolvimento.html"
+                            class="btn-primary btn-card">
+                            Realizar essa trilha
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- CARD 2: dados-->
+                <div class="area-card">
+                    <div class="card-header">
+                        <img
+                            src="../imagens/Dados.png"
+                            alt="Área de Dados">
+                    </div>
+                    <div class="area-content">
+                        <h2>Área de Dados</h2>
+                        <p>
+                            Transforme grandes volumes de dados em informações estratégicas utilizando
+                            análise, estatística e programação para apoiar decisões inteligentes.
+                        </p>
+                        <a
+                            href="curso_dados.html"
+                            class="btn-primary btn-card">
+
+                            Realizar essa trilha
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- CARD 3:segurança-->
+                <div class="area-card">
+                    <div class="card-header">
+                        <img
+                            src="../imagens/Segurança da Informação.png"
+                            alt="Segurança da Informação">
+                    </div>
+                    <div class="area-content">
+                        <h2>Segurança da Informação</h2>
+                        <p>
+                            Proteja sistemas, redes e informações contra ataques cibernéticos,
+                            vazamentos de dados e acessos não autorizados por meio de boas práticas.
+                        </p>
+                        <a
+                            href="curso_seguranca.html"
+                            class="btn-primary btn-card">
+
+                            Realizar essa trilha
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 4: ia -->
+                <div class="area-card">
+                    <div class="card-header">
+                        <img
+                            src="../imagens/IA.png"
+                            alt="Inteligência Artificial">
+                    </div>
+                    <div class="area-content">
+                        <h2>Inteligência Artificial</h2>
+                        <p>
+                            É uma tecnologia que permite máquinas simularem a inteligência humana,
+                            aprendendo com dados, reconhecendo padrões e tomando decisões de forma autônoma.
+                        </p>
+                        <a
+                            href="curso_ia.html"
+                            class="btn-primary btn-card">
+
+                            Realizar essa trilha
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- Rodapé Completo -->
+    <footer class="footer footer-dark">
+        <div class="footer-container">
+            
+            <!-- Links de Navegação -->
+            <div class="footer-nav">
+                <a href="../home.html">Home</a>
+                <a href="testeVocacional.html">Teste Vocacional</a>
+                <a href="carreiras.html">Carreiras</a>
+                <a href="sobre.html">Sobre Nós</a>
+            </div>
+
+            <!-- Links Sociais -->
+            <div class="footer-social">
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                <a href="https://br.linkedin.com/" target="_blank">LinkedIn</a>
+            </div>
+
+            <!-- Direitos Autorais -->
+            <div class="footer-copyright">
+                <p>&copy; 2026 Do Zer0 ao Tech. Todos os direitos reservados.</p>
+            </div>
+            
+        </div>
+    </footer>
+
+    <!--Menu de acessibilidade -->
+    <button class="botao-acessibilidade" id="botaoAcessibilidade" aria-label="Abrir opções de acessibilidade" aria-expanded="false">
+        ♿
+    </button>
+
+    <div class="menu-acessibilidade" id="menuAcessibilidade" aria-hidden="true">
+        <div class="cabecalho-acessibilidade">
+            <h2>Acessibilidade</h2>
+            <button id="fecharAcessibilidade" aria-label="Fechar menu">×</button>
+        </div>
+
+        <div class="opcoes-acessibilidade">
+            <button class="opcao-acessibilidade" id="aumentarTexto">
+                <span>🔠</span>
+                <div>
+                    <strong>Aumentar texto</strong>
+                    <small>Aumentar o tamanho da fonte</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="diminuirTexto">
+                <span>🔡</span>
+                <div>
+                    <strong>Diminuir texto</strong>
+                    <small>Diminuir o tamanho da fonte</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="lerAoPassar">
+                <span>🖱️</span>
+                <div>
+                    <strong>Ler ao passar o mouse</strong>
+                    <small>Ouvir o conteúdo ao posicionar o cursor</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="altoContraste">
+                <span>◐</span>
+                <div>
+                    <strong>Alto contraste</strong>
+                    <small>Aumentar o contraste das cores</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="contrasteNegativo">
+                <span>◑</span>
+                <div>
+                    <strong>Contraste negativo</strong>
+                    <small>Inverter as cores da página</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="destacarLinks">
+                <span>🔗</span>
+                <div>
+                    <strong>Destacar links</strong>
+                    <small>Facilitar a identificação dos links</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade restaurar" id="restaurarAcessibilidade">
+                <span>↩️</span>
+                <div>
+                    <strong>Restaurar padrão</strong>
+                    <small>Voltar às configurações originais</small>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <script src="js/acessibilidade.js"></script>
+
+
+</body>
+</html>

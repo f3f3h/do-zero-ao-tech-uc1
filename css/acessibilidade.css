@@ -1,0 +1,173 @@
+.botao-acessibilidade {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 58px;
+    height: 58px;
+    border: none;
+    border-radius: 50%;
+    background: #0057b8;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.botao-acessibilidade:hover {
+    background: #003f87;
+}
+
+.botao-acessibilidade:focus {
+    outline: 3px solid #ffcc00;
+    outline-offset: 3px;
+}
+
+.menu-acessibilidade {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 90px;
+    width: 330px;
+    max-height: 80vh;
+    overflow-y: auto;
+    background: white;
+    color: #222;
+    border-radius: 14px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+    z-index: 9998;
+    padding: 18px;
+}
+
+.menu-acessibilidade.aberto {
+    display: block;
+}
+
+.cabecalho-acessibilidade {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cabecalho-acessibilidade h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.cabecalho-acessibilidade button {
+    border: none;
+    background: transparent;
+    font-size: 28px;
+    cursor: pointer;
+    color: #333;
+}
+
+.opcoes-acessibilidade {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.opcao-acessibilidade {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    min-height: 58px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f8f8f8;
+    color: #222;
+    text-align: left;
+    cursor: pointer;
+}
+
+.opcao-acessibilidade:hover {
+    background: #e9f2ff;
+    border-color: #0057b8;
+}
+
+.opcao-acessibilidade:focus {
+    outline: 3px solid #0057b8;
+    outline-offset: 2px;
+}
+
+.opcao-acessibilidade span {
+    width: 35px;
+    min-width: 35px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.opcao-acessibilidade strong {
+    display: block;
+    font-size: 15px;
+}
+
+.opcao-acessibilidade small {
+    display: block;
+    margin-top: 3px;
+    font-size: 12px;
+    color: #555;
+}
+
+.opcao-acessibilidade.ativo {
+    background: #0057b8;
+    color: white;
+    border-color: #0057b8;
+}
+
+.opcao-acessibilidade.ativo small {
+    color: white;
+}
+
+.restaurar {
+    margin-top: 5px;
+    background: #eee;
+}
+
+.alto-contraste {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+.alto-contraste * {
+    background-color: #000 !important;
+    color: #fff !important;
+    border-color: #fff !important;
+}
+
+.alto-contraste a {
+    color: #ffff00 !important;
+}
+
+.contraste-negativo {
+    filter: invert(1);
+}
+
+.destacar-links a {
+    background: #ffff00 !important;
+    color: #000 !important;
+    text-decoration: underline !important;
+    outline: 2px solid #000;
+}
+
+@media (max-width: 600px) {
+    .botao-acessibilidade {
+        right: 15px;
+        bottom: 15px;
+        width: 55px;
+        height: 55px;
+    }
+
+    .menu-acessibilidade {
+        right: 15px;
+        bottom: 80px;
+        width: calc(100% - 30px);
+        max-height: 75vh;
+    }
+}

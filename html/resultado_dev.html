@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado - Desenvolvimento de Software</title>
+    <link rel="stylesheet" href="../home.css">
+    <link rel="stylesheet" href="../css/resultado.css">
+    <link rel="stylesheet" href="../css/acessibilidade.css">
+</head>
+<body>
+
+    <header class="header header-dark">
+        <div class="header-container">
+            <div class="logo">
+                <img src="../imagens/LUMI LOGO.png" alt="Lumi logo">
+                <span class="logo-text-light">DoZeroAoTech</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="../home.html" class="nav-light">Home</a>
+                <a href="testeVocacional.html" class="active nav-light">Teste Vocacional</a>
+                <a href="carreiras.html" class="nav-light">Carreiras</a>
+                <a href="sobre.html" class="nav-light">Sobre</a>
+            </nav>
+
+    </header>
+
+    <main class="main-container">
+        <div class="resultado-wrapper">
+            <h1 class="resultado-title">A área que mais combina com você é:</h1>
+
+            <div class="resultado-card">
+                <img src="../imagens/Desenvolvimento de Software.png" alt="Desenvolvimento de Software">
+                <div class="card-info">
+                    <h2>Desenvolvimento de Software</h2>
+                    <p>Crie sites, sistemas e aplicativos utilizando linguagens de programação, bancos de dados e tecnologias modernas para desenvolver soluções digitais inovadoras.</p>
+                    
+                    <!-- BLOCO DOS BOTÕES ATUALIZADO -->
+                    <div class="resultado-botoes">
+                        <a href="desenvolvimento.html" class="btn-trilha">Realizar essa trilha</a>
+                        <a href="carreiras.html" class="btn-trilha-secundario">Explorar trilhas</a>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <p class="resultado-descricao">
+                Você gosta de criar soluções, transformar ideias em ferramentas e entender como as coisas funcionam. Seu perfil combina com quem gosta de construir sites, aplicativos e sistemas que podem ser usados no dia a dia.
+            </p>
+        </div>
+    </main>
+
+    <!-- Rodapé Completo -->
+    <footer class="footer footer-dark">
+        <div class="footer-container">
+            
+            <!-- Links de Navegação -->
+            <div class="footer-nav">
+                <a href="../home.html">Home</a>
+                <a href="testeVocacional.html">Teste Vocacional</a>
+                <a href="carreiras.html">Carreiras</a>
+                <a href="#">Sobre Nós</a>
+            </div>
+
+            <!-- Links Sociais (Cegos) -->
+            <div class="footer-social">
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                <a href="https://br.linkedin.com/" target="_blank">LinkedIn</a>
+            </div>
+
+            <!-- Direitos Autorais -->
+            <div class="footer-copyright">
+                <p>&copy; 2026 Do 0 ao Tech. Todos os direitos reservados.</p>
+            </div>
+            
+        </div>
+    </footer>
+    <!--Menu de acessibilidade -->
+    <button class="botao-acessibilidade" id="botaoAcessibilidade" aria-label="Abrir opções de acessibilidade" aria-expanded="false">
+        ♿
+    </button>
+
+    <div class="menu-acessibilidade" id="menuAcessibilidade" aria-hidden="true">
+        <div class="cabecalho-acessibilidade">
+            <h2>Acessibilidade</h2>
+            <button id="fecharAcessibilidade" aria-label="Fechar menu">×</button>
+        </div>
+
+        <div class="opcoes-acessibilidade">
+            <button class="opcao-acessibilidade" id="aumentarTexto">
+                <span>🔠</span>
+                <div>
+                    <strong>Aumentar texto</strong>
+                    <small>Aumentar o tamanho da fonte</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="diminuirTexto">
+                <span>🔡</span>
+                <div>
+                    <strong>Diminuir texto</strong>
+                    <small>Diminuir o tamanho da fonte</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="lerAoPassar">
+                <span>🖱️</span>
+                <div>
+                    <strong>Ler ao passar o mouse</strong>
+                    <small>Ouvir o conteúdo ao posicionar o cursor</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="altoContraste">
+                <span>◐</span>
+                <div>
+                    <strong>Alto contraste</strong>
+                    <small>Aumentar o contraste das cores</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="contrasteNegativo">
+                <span>◑</span>
+                <div>
+                    <strong>Contraste negativo</strong>
+                    <small>Inverter as cores da página</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="destacarLinks">
+                <span>🔗</span>
+                <div>
+                    <strong>Destacar links</strong>
+                    <small>Facilitar a identificação dos links</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade restaurar" id="restaurarAcessibilidade">
+                <span>↩️</span>
+                <div>
+                    <strong>Restaurar padrão</strong>
+                    <small>Voltar às configurações originais</small>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <script src="../js/acessibilidade.js"></script>
+
+</body>
+</html>

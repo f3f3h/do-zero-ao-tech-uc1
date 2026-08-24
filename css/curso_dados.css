@@ -1,0 +1,345 @@
+/* --- LAYOUT GERAL DA PÁGINA DE DADOS --- */
+
+.dados-page-wrapper {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.dados-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.dados-hero img {
+    width: 280px;
+    height: auto;
+}
+
+.dados-hero h1 {
+    font-size: 2.8rem;
+    color: #0f172a;
+}
+
+.dados-text-block {
+    font-size: 1.1rem;
+    color: #0f172a;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.dados-section {
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    color: #0f172a;
+    margin-bottom: 30px;
+}
+
+/* --- GRID DE CARDS (O QUE VOCÊ PODE FAZER) --- */
+.cards-trilha {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.trilha-card {
+    background-color: #fef9c3;
+    border: 1px solid #fde047;
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.trilha-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.trilha-card p {
+    font-size: 0.88rem;
+    color: #0f172a;
+    line-height: 1.5;
+}
+
+/* --- LISTA DE PASSOS --- */
+.passos-lista {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.passo-item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 22px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.passo-item:last-child {
+    border-bottom: none;
+}
+
+.passo-numero {
+    width: 48px;
+    height: 48px;
+    border: 2px solid #26c6da;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #0f172a;
+    flex-shrink: 0;
+}
+
+.passo-texto h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+
+.passo-texto p {
+    font-size: 0.9rem;
+    color: #0f172a;
+    line-height: 1.5;
+}
+
+/* --- TABELA DE CARREIRAS (ONDE ESSE CAMINHO PODE LEVAR) --- */
+.career-grid-header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #0f172a;
+    margin-bottom: 20px;
+}
+
+.career-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 12px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.row-yellow {
+    background-color: #fef9c3;
+    border: 1px solid #fde047;
+}
+
+.row-blue {
+    background-color: #e0f2fe;
+    border: 1px solid #7dd3fc;
+}
+
+.career-cell {
+    padding: 20px;
+    text-align: center;
+    border-right: 1px solid rgba(0,0,0,0.05);
+}
+
+.career-cell:last-child {
+    border-right: none;
+}
+
+.career-cell h4 {
+    font-size: 0.95rem;
+    font-style: italic;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.career-cell p {
+    font-size: 0.8rem;
+    color: #0f172a;
+    line-height: 1.4;
+}
+
+/* --- MÉDIA SALARIAL --- */
+.salary-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.salary-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.salary-level {
+    width: 15%;
+    font-size: 0.95rem;
+    color: #0f172a;
+    font-weight: 500;
+}
+
+.salary-bar-bg {
+    width: 50%;
+    height: 3px;
+    background-color: #e2e8f0;
+    position: relative;
+}
+
+.salary-bar-fill {
+    height: 100%;
+    background-color: #eab308;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.salary-value {
+    width: 25%;
+    text-align: right;
+    font-size: 0.95rem;
+    color: #0f172a;
+    font-weight: 600;
+}
+
+/* --- VÍDEO (ROTINA REAL) --- */
+.video-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.video-card iframe {
+    width: 380px; 
+    height: 215px; 
+    border-radius: 16px; 
+    border: none; 
+    flex-shrink: 0; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+}
+
+.video-info h3 {
+    font-size: 1.4rem;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+/* --- ONDE ESTUDAR (ABAS E CURSOS) --- */
+.course-tabs {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.btn-tab {
+    padding: 10px 24px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    border-radius: 20px;
+    border: 1px solid #cbd5e1;
+    background-color: transparent;
+    color: #0f172a;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-tab.active {
+    background-color: #facc15;
+    border-color: #facc15;
+    color: #0f172a;
+}
+
+.course-category {
+    margin-bottom: 40px;
+}
+
+.course-category h3 {
+    font-size: 1.4rem;
+    color: #0f172a;
+    border-left: 4px solid #facc15;
+    padding-left: 12px;
+    margin-bottom: 15px;
+}
+
+.course-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.course-item h4 {
+    font-size: 0.9rem;
+    color: #0f172a;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.course-item span {
+    font-size: 0.8rem;
+    color: #0f172a;
+}
+
+.course-item a {
+    font-size: 0.85rem;
+    color: #0f172a;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.course-item a:hover {
+    color: #26c6da;
+}
+
+.escondido {
+    display: none !important;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+    .dados-hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .cards-trilha, .career-grid-header, .career-row {
+        grid-template-columns: 1fr;
+    }
+    .career-grid-header {
+        display: none;
+    }
+    .career-cell {
+        border-right: none;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    .video-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .video-card iframe {
+        width: 100%;
+        height: 50vw;
+    }
+    .salary-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .salary-level, .salary-value {
+        width: 100%;
+        text-align: left;
+    }
+    .salary-bar-bg {
+        width: 100%;
+    }
+}
