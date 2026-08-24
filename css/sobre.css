@@ -33,13 +33,13 @@ main p {
 
 /* --- SECTION 1: INTRODUÇÃO --- */
 #section1 h1 {
-    font-size: 2.8rem;
+    font-size: 2.3rem;
     margin-bottom: 25px;
     letter-spacing: -0.02em;
 }
 
 #section1 p {
-    font-size: 1.15rem;
+    font-size: 1rem;
     margin-bottom: 15px;
 }
 
@@ -75,7 +75,7 @@ main p {
 }
 
 #quadrado1 h3, #quadrado2 h3, #quadrado3 h3 {
-    font-size: 1.4rem;
+    font-size: 1rem;
     margin-bottom: 15px;
     border-left: 4px solid #facc15; /* Detalhe lateral no título */
     padding-left: 12px;
@@ -97,7 +97,7 @@ main p {
 
 /* --- SECTION 3: LUMI --- */
 #section3 h2 {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
     margin-bottom: 30px;
 }
 
