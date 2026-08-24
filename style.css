@@ -425,8 +425,8 @@ h1, h2, h3 {
     color: #26c6da;
     font-style: italic;
     font-weight: 600;
-    font-size: 0.95rem;
-    margin: 25px 0 15px 0;
+    font-size: 1.25rem;
+    margin: 0px 0 20px 0;
 }
 
 .steps-list {
@@ -478,7 +478,8 @@ h1, h2, h3 {
 
 .areas-section h2 {
     font-size: 2.1rem;
-    margin-bottom: 35px;
+    margin-bottom: 0px;
+    
 }
 
 .cards-grid {
