@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/acessibilidade.css">
 </head>
 <body>
+    <div id="luz-labirinto"></div>
 
     <header class="header">
         <div class="header-container">
@@ -329,6 +330,18 @@
     </div>
 
     <script src="js/acessibilidade.js"></script>
+
+    <script>
+        // Rastreia o movimento do mouse e atualiza a posição da luz no labirinto
+        document.addEventListener('mousemove', (e) => {
+            const luz = document.getElementById('luz-labirinto');
+            if (luz) {
+                // Atualiza as variáveis CSS com as coordenadas X e Y do mouse
+                luz.style.setProperty('--x', e.clientX + 'px');
+                luz.style.setProperty('--y', e.clientY + 'px');
+            }
+        });
+    </script>
 
 </body>
 </html>

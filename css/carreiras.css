@@ -243,6 +243,37 @@ p {
     width: 100%;
 }
 
+body {
+    background-color: #ffffff; 
+}
+
+#luz-labirinto {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    
+    background-image: url('../imagens/labirinto.png'); 
+    
+    /* MODIFICADO: Tamanho menor para a imagem se repetir pelo fundo */
+    background-size: 1500px; 
+    background-repeat: repeat;
+    
+    z-index: -10; 
+    pointer-events: none; 
+    
+    --x: -100px;
+    --y: -100px;
+    
+    /* MODIFICADO: Círculo maior (100px) com um centro 100% visível (até 30%) antes de começar a embaçar */
+    -webkit-mask-image: radial-gradient(circle 75px at var(--x) var(--y), rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%);
+    mask-image: radial-gradient(circle 75px at var(--x) var(--y), rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%);
+    
+    /* MODIFICADO: Opacidade maior para as linhas azuis destacarem mais na tela */
+    opacity: 0.5; 
+}
+
 @media (max-width: 768px) {
     .cards-grid {
         width: 100%;

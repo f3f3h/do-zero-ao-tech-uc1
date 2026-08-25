@@ -10,7 +10,10 @@
 
 </head>
 <body>
-<header class="header">
+
+    <div id="luz-labirinto"></div>
+
+    <header class="header">
         <div class="header-container">
             <div class="logo">
                 <img src="../imagens/LUMI LOGO.png" alt="Lumi logo">
@@ -183,7 +186,17 @@
         </div>
     </div>
 
-    <script src="../js/acessibilidade.js"></script>    
+    <script src="../js/acessibilidade.js"></script>
+    
+    <script>
+        document.addEventListener('mousemove', (e) => {
+            const luz = document.getElementById('luz-labirinto');
+            if (luz) {
+                luz.style.setProperty('--x', e.clientX + 'px');
+                luz.style.setProperty('--y', e.clientY + 'px');
+            }
+        });
+    </script>
 
 </body>
 </html>

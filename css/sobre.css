@@ -47,7 +47,6 @@ main p {
     flex: 1;
 }
 
-/* Padrão de Cards do Site (#fef9c3 com borda #fde047) */
 #quadrado1, #quadrado2, #quadrado3, #quadrado5, #quadrado6 {
     background-color: #fef9c3;
     border: 1px solid #fde047;
