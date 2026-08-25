@@ -238,10 +238,9 @@
                 <div class="video-card">
                     
                     <!-- Link do video -->
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Tl0S5FB988Q?si=QYG8hjI8gbS9w2Xj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    
-                    <div class="video-info">
-                        <h3>Minha Honesta Rotina como "Diretor de T.I"</h3>
-                        <a href="https://www.youtube.com/@dewoibau" target="_blank" class="link-inline">dewoibau</a>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/BRhz6v-jfMM?si=CSaJAhGpjKzRNOdO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    <div class="video-info">
+                        <h3>O que faz uma pessoa engenheira de Machine Learning? com Thiago Santos | #HipstersPontoTube</h3>
+                        <a href="https://www.youtube.com/@alura" target="_blank" class="link-inline">Alura</a>
                     </div>
                 </div>
             </section>
@@ -520,13 +519,11 @@
     <!-- Script Simples para as Abas de Cursos -->
     <script>
         function toggleCursos(tipo) {
-            // Remove a classe active de todos os botões e esconde as listas
             document.getElementById('btn-gratuitos').classList.remove('active');
             document.getElementById('btn-pagos').classList.remove('active');
             document.getElementById('lista-gratuitos').classList.add('escondido');
             document.getElementById('lista-pagos').classList.add('escondido');
 
-            // Ativa o botão selecionado e mostra a respectiva lista
             document.getElementById('btn-' + tipo).classList.add('active');
             document.getElementById('lista-' + tipo).classList.remove('escondido');
         }

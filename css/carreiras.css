@@ -256,7 +256,6 @@ body {
     
     background-image: url('../imagens/labirinto.png'); 
     
-    /* MODIFICADO: Tamanho menor para a imagem se repetir pelo fundo */
     background-size: 1500px; 
     background-repeat: repeat;
     
@@ -266,11 +265,9 @@ body {
     --x: -100px;
     --y: -100px;
     
-    /* MODIFICADO: Círculo maior (100px) com um centro 100% visível (até 30%) antes de começar a embaçar */
     -webkit-mask-image: radial-gradient(circle 75px at var(--x) var(--y), rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%);
     mask-image: radial-gradient(circle 75px at var(--x) var(--y), rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%);
     
-    /* MODIFICADO: Opacidade maior para as linhas azuis destacarem mais na tela */
     opacity: 0.5; 
 }
 
@@ -283,11 +280,10 @@ body {
         padding: 20px;
     }
 
-.btn-access:hover {
-    background-color: #facc15;
-    color: #0f172a !important;
-    border-color: #facc15;
-}
+    #luz-labirinto {
+        display: none !important;
+    }
+
 }
 
 /* --- RESPONSIVIDADE --- */
@@ -300,12 +296,6 @@ body {
 
     .nav-menu {
         gap: 20px;
-    }
-
-    .accessibility-controls {
-        margin-left: 0;
-        padding-left: 0;
-        border-left: none;
     }
 
     .cards-grid {

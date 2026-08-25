@@ -45,16 +45,25 @@
             </div>
         </section>
 
-        <section class="lumi-card">
-            <div class="lumi-avatar">
-                <img src="imagens/Lumi.png" alt="Mascote Lumi">
+<!-- Seção da Lumi dividida em Duas Caixas -->
+        <section class="lumi-duas-caixas">
+            
+            <!-- Caixa 1: O Vídeo -->
+            <div class="lumi-caixa-video">
+                <video controls>
+                    <source src="imagens/video01.mp4" type="video/mp4">
+                    Seu navegador não suporta a tag de vídeo.
+                </video>
             </div>
-            <div class="lumi-text">
+            
+            <!-- Caixa 2: O Texto -->
+            <div class="lumi-caixa-texto">
                 <h2>Oi! Eu sou a Lumi!</h2>
-                <p>Eu sei que entrar no mundo da tecnologia pode parecer um pouco confuso no começo. Tantas áreas, linguagens, cursos... por onde começar?</p>
-                <p>É justamente para isso que eu estou aqui! Preparei um mapinha com os primeiros passos para te ajudar a encontrar um caminho, descobrir o que aprender e chegar até o seu primeiro projeto.</p>
-                <p class="lumi-highlight">Vem comigo? Eu te mostro o caminho.</p>
+                <p>Sua estrela-guia no mundo da tecnologia! Dar os primeiros passos na tecnologia pode parecer um desafio. São tantas áreas, cursos e linguagens… Qual carreira seguir? Qual curso escolher? Com qual área eu mais me identifico?</p>
+                <p>Mas calma: você não precisa descobrir tudo de uma vez. Por isso, criei um mapinha para guiar seu caminho. No Do 0 ao Tech, vou ajudar você a dar os primeiros passos e criar seu primeiro projeto. Vem comigo!</p>
+                <p class="lumi-highlight">Vem comigo!</p>
             </div>
+            
         </section>
 
         <section class="roadmap">
@@ -122,7 +131,6 @@
             </div>
         </section>
 
-        <!-- Script atualizado para abrir/fechar ao clicar na mesma bolinha -->
         <script>
             function openStep(num) {
                 const current = document.getElementById('step' + num);
@@ -332,11 +340,9 @@
     <script src="js/acessibilidade.js"></script>
 
     <script>
-        // Rastreia o movimento do mouse e atualiza a posição da luz no labirinto
         document.addEventListener('mousemove', (e) => {
             const luz = document.getElementById('luz-labirinto');
             if (luz) {
-                // Atualiza as variáveis CSS com as coordenadas X e Y do mouse
                 luz.style.setProperty('--x', e.clientX + 'px');
                 luz.style.setProperty('--y', e.clientY + 'px');
             }

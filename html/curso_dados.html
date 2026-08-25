@@ -520,13 +520,11 @@
     <!-- Script Simples para as Abas de Cursos -->
     <script>
         function toggleCursos(tipo) {
-            // Remove a classe active de todos os botões e esconde as listas
             document.getElementById('btn-gratuitos').classList.remove('active');
             document.getElementById('btn-pagos').classList.remove('active');
             document.getElementById('lista-gratuitos').classList.add('escondido');
             document.getElementById('lista-pagos').classList.add('escondido');
 
-            // Ativa o botão selecionado e mostra a respectiva lista
             document.getElementById('btn-' + tipo).classList.add('active');
             document.getElementById('lista-' + tipo).classList.remove('escondido');
         }
