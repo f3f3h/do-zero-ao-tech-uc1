@@ -4,6 +4,8 @@ O **Do Zer0 ao Tech** é uma plataforma web educacional e interativa criada para
 
 **Acesse o projeto online:** [https://do-zero-ao-tech-uc1.vercel.app/](https://do-zero-ao-tech-uc1.vercel.app/)
 
+**Canva:** https://www.canva.com/design/DAHTKJP4PiE/__O8mm4SVRTJp4QbS6yuDw/edit
+
 ## Sobre o Projeto
 
 O *Do Zer0 ao Tech* foi pensado para transformar dúvidas em caminhos claros. A plataforma oferece:
